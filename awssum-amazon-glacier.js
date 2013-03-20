@@ -60,7 +60,7 @@ var Glacier = function(opts) {
 };
 
 // inherit from Amazon
-util.inherits(Glacier, amazon.Amazon);
+util.inherits(Glacier, amazon.AmazonSignatureV2);
 
 // --------------------------------------------------------------------------------------------------------------------
 // methods we need to implement from awssum.js/amazon.js
