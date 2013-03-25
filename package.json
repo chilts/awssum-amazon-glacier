@@ -1,6 +1,6 @@
 {
     "name" : "awssum-amazon-glacier",
-    "description" : "NodeJS module to talk to Amazon Glacier.",
+    "description" : "AwsSum plugin for Amazon Glacier.",
     "version" : "1.0.0",
 
     "main" : "awssum-amazon-glacier.js",
