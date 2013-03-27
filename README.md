@@ -17,7 +17,7 @@ var amazonGlacier = require('awssum-amazon-glacier');
 var glacier = new amazonGlacier.Glacier({
     'accessKeyId'     : process.env.ACCESS_KEY_ID,
     'secretAccessKey' : process.env.SECRET_ACCESS_KEY,
-    'region'          : amazonS3.US_EAST_1
+    'region'          : amazonGlacier.US_EAST_1
 });
 
 glacier.ListVaults(function(err, data) {
