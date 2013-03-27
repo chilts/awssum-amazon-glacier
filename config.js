@@ -71,7 +71,7 @@ function bodyInitiateJob(options, args) {
         Type : args.Type,
     };
 
-    var names = [ 'ArchiveId', 'Description', 'SNSTopic', 'Format' ];
+    var names = [ 'ArchiveId', 'Description', 'RetrievalByteRange', 'SNSTopic', 'Format' ];
     names.forEach(function(v, i) {
         if ( args[v] ) {
             data[v] = args[v];
@@ -383,6 +383,7 @@ module.exports = {
             Type        : requiredSpecial,
             ArchiveId   : optionalSpecial,
             Description : optionalSpecial,
+            RetrievalByteRange : optionalSpecial,
             Format      : optionalSpecial,
             SNSTopic    : optionalSpecial,
         },
