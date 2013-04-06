@@ -51,6 +51,12 @@ var Glacier = function(opts) {
     // call the superclass for initialisation
     Glacier.super_.call(this, opts);
 
+    // check we have an awsAccountId
+    if ( ! opts.awsAccountId ) {
+        throw MARK + "provide a 'awsAccountId'";
+    }
+    self.setAwsAccountId(opts.awsAccountId);
+
     // check the region is valid
     if ( ! endPoint[opts.region] ) {
         throw MARK + "invalid region '" + opts.region + "'";

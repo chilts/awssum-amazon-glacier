@@ -17,6 +17,7 @@ var amazonGlacier = require('awssum-amazon-glacier');
 var glacier = new amazonGlacier.Glacier({
     'accessKeyId'     : process.env.ACCESS_KEY_ID,
     'secretAccessKey' : process.env.SECRET_ACCESS_KEY,
+    'awsAccountId'    : process.env.AWS_ACCOUNT_ID,
     'region'          : amazonGlacier.US_EAST_1
 });
 
@@ -25,6 +26,8 @@ glacier.ListVaults(function(err, data) {
     fmt.dump(data, 'data');
 });
 ```
+
+Note: The Glacier requires your ```AWS Account Id```, hence it is also required here.
 
 # Author #
 
