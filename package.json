@@ -1,7 +1,7 @@
 {
   "name": "awssum-amazon-glacier",
   "description": "AwsSum plugin for Amazon Glacier.",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "main": "awssum-amazon-glacier.js",
   "engines": {
     "node": ">= 0.6.0"
